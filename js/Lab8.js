@@ -906,7 +906,6 @@
                                        setTimeout(function()
                                        {
                                        document.getElementById('a31-22').style.visibility="visible";
-
                                        myInt = setInterval(function(){ animatearrow(); }, 500);
                                        animateArrowATPosition(45,370,30,180);
                                        document.getElementById("a31-22").onclick=function() {
@@ -1096,7 +1095,6 @@
          };
        },1200);
      }
-
      function step33()
      {
        myStopFunction();
@@ -1153,7 +1151,6 @@
                          var boxHandMargin = (data3[p][2]-5)*14.6;
                          document.getElementById("b41-22").style.marginLeft = boxHandMargin + 'px';
                          document.getElementById("b4-1").style.marginLeft = boxHandMargin + 'px';
-
                          setTimeout(function()
                          {
                            document.getElementById('b41-22').style.visibility="hidden";
@@ -1161,7 +1158,6 @@
                            document.getElementById('par3').innerHTML="Difference="+data3[p][3]+" cm";
                            setTimeout(function()
                            {
-
                             document.getElementById('b4-1').style.display="none";
                             display('par','par1','par2','par3','b2-2','b2-22','b1-2','b22-2','b22-22','b1-22','b3-11');
                             document.getElementById('b1-23').style.visibility="visible";
@@ -1231,7 +1227,6 @@
                                        setTimeout(function()
                                        {
                                        document.getElementById('Sample3').style.visibility="hidden";
-
                                        var leftLimbMargin = (data3[p][7]-15)*14.6;
                                        var rightLimbMargin = (data3[p][8]-15)*14.6;
                                        document.getElementById('b21-2').style.marginLeft = leftLimbMargin + 'px';
@@ -1239,7 +1234,6 @@
                                        setTimeout(function()
                                        {
                                        document.getElementById('b31-22').style.visibility="visible";
-
                                        myInt = setInterval(function(){ animatearrow(); }, 500);
                                        animateArrowATPosition(45,370,30,180);
                                        document.getElementById("b31-22").onclick=function() {
