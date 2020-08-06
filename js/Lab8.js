@@ -572,7 +572,7 @@
           border: { 
                  color: "blue",
                  width: 2,
-                 opacity: 0.5 ,
+                 opacity: 1 ,
                  cornerRadius : 4
                }, 
           font:{ 
@@ -1633,7 +1633,7 @@
                             size: '12px'
                         }
                     },
-                     enableCanvasRendering: true,
+                    // enableCanvasRendering: true,
                     exportSettings: { type: "jpg", mode: "client"}
                   
                 });
@@ -1641,9 +1641,9 @@
                 setTimeout(function() {
                     document.getElementById("nextButton").style.visibility = "visible";
                 }, 1000);
-
                 //Add download function to the anchor element.
                 document.getElementById('download-graph').onclick = function download() {
+                    $("#chartContainer").ejChart({enableCanvasRendering:true})
                     var chart = $("#chartContainer").ejChart("export");
                     if(window.navigator.msSaveOrOpenBlob)
                       window.navigator.msSaveOrOpenBlob(chart.msToBlob(), "Graph for 300 rpm.jpg");
@@ -1652,6 +1652,8 @@
                       this.download = "Graph for 300 rpm.jpg";
                       this.href = chartData;
                     }
+                $("#chartContainer").ejChart({enableCanvasRendering:false})
+
                 }
             }
 
@@ -1742,7 +1744,7 @@
                             size: '12px'
                         }
                     },
-                    enableCanvasRendering: true,
+                   // enableCanvasRendering: true,
                     exportSettings: { type: "jpg", mode: "client"}
                 });
                 
@@ -1752,6 +1754,8 @@
 
                 //Add download function to the anchor element.
                 document.getElementById('download-graph1').onclick = function download() {
+                    $("#chartContainer1").ejChart({enableCanvasRendering:true})
+
                     var chart = $("#chartContainer1").ejChart("export");
                     if(window.navigator.msSaveOrOpenBlob)
                       window.navigator.msSaveOrOpenBlob(chart.msToBlob(), "Graph for 400 rpm.jpg");
@@ -1760,6 +1764,7 @@
                       this.download = "Graph for 400 rpm.jpg";
                       this.href = chartData;
                     }
+                    $("#chartContainer1").ejChart({enableCanvasRendering:false})
                 }
             }
 
