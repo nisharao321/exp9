@@ -553,7 +553,7 @@
 
           //Customizing Chart title font 
           font:{ 
-               opacity: 1,
+              
                fontFamily: "Verdana",
                color: "black",
                size: '14px' 
@@ -569,8 +569,14 @@
           labelFormat:"{value}",
           // range: { min: 100, max: 400, interval: 50 },                       
           range: { min: 0, max: 6, interval: 1}  ,
+          border: { 
+                 color: "blue",
+                 width: 2,
+                 opacity: 0.5 ,
+                 cornerRadius : 4
+               }, 
           font:{ 
-               opacity: 1,
+               
                fontFamily: "Verdana",
                color: "black",
                size: '14px' 
@@ -1545,13 +1551,17 @@
                         range: {
                             min: 0,max: 0.30,interval: 0.05
                         },
-                        border: {
-                            color: "blue",width: 2,opacity: 0.5,cornerRadius: 4
-                        },
+                       border: { 
+                           color: "blue",
+                           width: 2,
+                           opacity: 0.5 ,
+                           cornerRadius : 4
+                         }, 
+
 
                         //Customizing Chart title font 
                         font: {
-                            opacity: 1,fontFamily: "Verdana",color: "black",size: '14px'
+                            fontFamily: "Verdana",color: "black",size: '14px'
                         }
                     },
                     primaryYAxis: {
@@ -1566,8 +1576,15 @@
                         range: {
                             min: 0,max: 6,interval: 1
                         },
+                        border: { 
+                           color: "blue",
+                           width: 2,
+                           opacity: 0.5 ,
+                           cornerRadius : 4
+                         }, 
+
                         font: {
-                            opacity: 1,fontFamily: "Verdana",color: "black",size: '14px'
+                            fontFamily: "Verdana",color: "black",size: '14px'
                         }
 
                     },
@@ -1661,7 +1678,7 @@
                         },
                         //Customizing Chart title font 
                         font: {
-                            opacity: 1,fontFamily: "Verdana",color: "black",size: '14px'
+                            fontFamily: "Verdana",color: "black",size: '14px'
                         }
                     },
                     primaryYAxis: {
@@ -1677,7 +1694,7 @@
                             min: 0,max: 6,interval: 1
                         },
                         font: {
-                            opacity: 1,fontFamily: "Verdana",color: "black",size: '14px'
+                            fontFamily: "Verdana",color: "black",size: '14px'
                         }
                     },
                     series: [{
